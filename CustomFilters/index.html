@@ -17,12 +17,20 @@
 
     <h1>Expressions and Interpolation</h1>
     <div ng-controller="MsgController">
-        {{name}} has a message for you: <br>
-        {{sayHello()}}
+    
         <div>
             <button ng-click="feedJonatas()">Feed Jonatas</button>
             <br>
+            Original: {{ sayMessage() }}
+            <br>
+            Loves: {{ sayLovesMessage() }}
+            <br>
+            Truth: {{ sayLovesMessage() | truth : 'healthy' : 'cookies'}}
+            <br>
+            BIG TRUTH: {{ sayLovesMessage() | truth : 'healthy' : 'cookie' | uppercase }}
+            <br>
             <img ng-src="Images/jonatas_{{stateOfBeing}}.png">
+            
         </div>
         
     </div>
