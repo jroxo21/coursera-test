@@ -19,13 +19,13 @@
     <div ng-controller="MsgController">
         {{name}} has a message for you: <br>
         {{sayHello()}}
+        <div>
+            <button ng-click="feedJonatas()">Feed Jonatas</button>
+            <br>
+            <img ng-src="Images/jonatas_{{stateOfBeing}}.png">
+        </div>
+        
     </div>
-    <div>
-        <button ng-click="feedJonatas">Feed Jonatas</button>
-        <br>
-        <img src="Images/jonatas_{{stateOfBeing}}.png">
-    </div>
-
 </body>
 
 </html>
